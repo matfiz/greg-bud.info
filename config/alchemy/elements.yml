@@ -1,3 +1,16 @@
 # == In this configuration you setup Alchemy´s element layouts.
 #
 # For further informations please see http://guides.alchemy-cms.com/create_elements.html
+
+- name: content
+  unique: false
+  contents:
+  - name: tresc
+    type: EssenceRichtext
+  available_contents:
+  - name: headline
+    type: EssenceText
+
+- name: galeria
+  picture_gallery: true
+

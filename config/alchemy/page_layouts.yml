@@ -4,4 +4,9 @@
 
 - name: intro
   unique: true
-  elements: []
+  elements: [content,download]
+  autogenerate: [content]
+  
+- name: subpage
+  unique: false
+  elements: content

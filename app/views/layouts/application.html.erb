@@ -2,11 +2,41 @@
 <html>
 <head>
   <%= render_meta_data %>
-  <%= stylesheet_link_tag 'application' %>
+  <%=stylesheet_link_tag 'application' %>
+  <%=javascript_include_tag 'application' %>
+  
 </head>
 <body>
+<div id="site" class="site">
+<div class="container">
+	<div class="hang t l"></div>
+	<div class="hang t r"></div>
+	<div class="clear"></div>
+<div class='top'>
+ <%=image_tag '/assets/logo.png', class: 'logo'%>
+ <%=image_tag '/assets/home.png', class: 'graw'%>
+</div>
+<div class="window">
+  <div class='nav'>
+    <%= render_subnavigation from_page: @page.get_language_root %>
+  </div>
+  <div class='cont'>
   <%= yield %>
-  <%= alchemy_preview_mode_code %>
-  <%= alchemy_menu_bar %>
+    </div>
+   
+</div>
+<div class='footer'>
+  (c) Copyright 2013 GrawerPix Centrum Reklamy.<br />
+  <%=link_to 'www.grawerpix.pl'%> <br />
+  Wszelkie prawa zastrzeżone. 
+</div>
+<div class="hang b l"></div>
+<div class="hang b r"></div>
+</div>
+
+<div class="door"></div>
+<div class="clear"></div>
+</div>
 </body>
+
 </html>
