@@ -4,4 +4,4 @@ tmp/*
 upload/*
 index/*
 config/database.yml
-
+uploads/*
