@@ -1,0 +1,7 @@
+<%= element_view_for(element) do |el| -%>
+  <div class="galleria">
+    <%- element.contents.gallery_pictures.each do |image| -%>
+      <%= link_to image_tag(show_alchemy_picture_url(image.essence.picture, :size => "140x140", :format => "png")), show_alchemy_picture_path(image.essence.picture, :size => "800x600", :format => "png"), :'data-lightbox' => "gallery", :'data-pre' => show_alchemy_picture_url(image.essence.picture, :size => "400x300", :format => "png")%>
+    <%- end -%>
+  </div>
+<%- end -%>

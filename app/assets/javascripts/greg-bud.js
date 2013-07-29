@@ -1,5 +1,4 @@
-$(document).ready(function(){
-//$(".container").addClass("target");
+$(document).ready(function(){	
 $('.target').blurjs({
 source: '.site',
 radius: 5,

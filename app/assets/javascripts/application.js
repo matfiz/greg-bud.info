@@ -13,5 +13,6 @@
 //= require jquery
 //= require blur.min
 //= require greg-bud
-
+//= require galeria
+//= require lightbox-2.6.min
 

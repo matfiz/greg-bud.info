@@ -1,4 +1,5 @@
-@import url('http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext')
+@import url('http://fonts.googleapis.com/css?family=Ropa+Sans&subset=latin,latin-ext')
+@import url('http://fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext')
 $cont: #ddd
 html, body
   height: 100% 
@@ -7,9 +8,10 @@ html, body
   padding: 0px
 body
   position: absolute
-  font-family: 'Roboto',Verdana, sans-serif
+  font-family: 'Ropa Sans',Verdana, sans-serif
   line-height: 140%
-  font-size: 13px  
+  font-size: 14px  
+  text-align: justify 
 .door
   background: url("/assets/door.jpg") no-repeat scroll left 40% transparent
   width: 30%
@@ -22,6 +24,8 @@ body
 
 .container
   background: rgba(255,255,255,0.1)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF)" /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF)  /* IE6 & 7 */ 
   border-top: 3px solid rgba(255, 255, 255, 0.2)
   border-left: 3px solid rgba(255, 255, 255, 0.2)
   border-radius: 50px
@@ -42,6 +46,9 @@ body
   margin: 20px 0px -1500px 145px
   .content
     margin: 10px 20px 
+    img 
+      float: left
+      margin: 5px
 
 .clear
   clear: both
@@ -63,6 +70,7 @@ body
   .logo
     padding: 5px 30px 20px 40px
     margin-top: 62px
+    float: left
     background-color: rgba(193,193,193,0.5)
     -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.3)
     -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.3)
@@ -98,6 +106,7 @@ body
 .nav
   float: left
   width: 140px
+  font-family: 'Dosis',Verdana, sans-serif
   ul
     list-style: none
     margin: 20px 10px 20px 0px
@@ -117,7 +126,6 @@ body
         padding-top: 80px
         margin-bottom: 5px
         -webkit-transition: all 500ms linear
-        -moz-transition: all 500ms linear
         -o-transition: all 500ms linear
         -ms-transition: all 500ms linear
         transition: all 500ms linear
@@ -126,7 +134,6 @@ body
           color: #444
           background-color: #eee
           -webkit-transition: all 500ms linear
-          -moz-transition: all 500ms linear
           -o-transition: all 500ms linear
           -ms-transition: all 500ms linear
           transition: all 500ms linear
@@ -145,6 +152,33 @@ body
 a
   text-decoration: none
   
+.galleria
+  width: 400px
+  margin: auto 
+  .stage
+    height: 320px
+    width: 400px
+    text-align: center 
+    display: table-cell
+    vertical-align: middle
+  a 
+    margin: 0px
+    width: 93px
+    height: 93px
+    overflow: hidden
+    text-align: center
+    display: inline-block     
+    -webkit-transition: all 300ms linear
+    -o-transition: all 300ms linear
+    -ms-transition: all 300ms linear
+    transition: all 300ms linear
+    &.active
+      border: 2px solid orange  
+      opacity: 1
+    &.inactive
+      border: 2px solid transparent
+
+      opacity: 0.6
 
 .footer
   text-align: center

@@ -38,6 +38,7 @@ end
 
 # To use debugger
 # gem 'debugger'
+gem "lightbox-rails"
 gem "jquery-rails"
 gem "alchemy_cms", "~> 2.6.2.1"
 gem "capistrano", :group => :development

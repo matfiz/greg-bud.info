@@ -123,6 +123,8 @@ GEM
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    lightbox-rails (0.0.3)
+      rails (~> 3.2.8)
     magiclabs-userstamp (2.0.2)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -207,6 +209,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   grawerpix-alchemy (~> 1.4)!
   jquery-rails
+  lightbox-rails
   mysql2
   rails (= 3.2.13)
   rails-i18n

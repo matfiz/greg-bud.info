@@ -9,4 +9,4 @@
   
 - name: subpage
   unique: false
-  elements: content
+  elements: content, galeria
