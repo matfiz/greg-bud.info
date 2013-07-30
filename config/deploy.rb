@@ -12,7 +12,7 @@ set :gempath, "/home/grawerpix/ruby/gems"
 set :rake, "source /home/grawerpix/.bash_profile && GEM_HOME=/home/grawerpix/ruby/gems rake"
 set :rvm_ruby_string, 'ruby-1.9.3@greg-bud.info'
 #set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
-set :rvm_type, :user
+set :rvm_type, :system
 #set :rvm_path, '/usr/local/rvm'
 require "rvm/capistrano"
 set :normalize_asset_timestamps, false #to avoid warnings for asset pipeline
