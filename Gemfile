@@ -42,3 +42,4 @@ gem "lightbox-rails"
 gem "jquery-rails"
 gem "alchemy_cms", "~> 2.6.2.1"
 gem "capistrano", :group => :development
+gem "rvm-capistrano"
