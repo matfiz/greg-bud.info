@@ -1,6 +1,8 @@
 <%= element_view_for(element) do |el| -%>
   <div class="text">
-     <%= link_to el.render(:image, {:image_size => "130x130", :format => "png"}), show_alchemy_picture_url(el.essence(:image).picture, :size => "800x600", :format => "png"), :'data-lightbox' => "gallery"%>
+    <%- if el.essence(:image).picture != nil %>
+      <%= link_to el.render(:image, {:image_size => "130x130", :format => "png"}), show_alchemy_picture_url(el.essence(:image).picture, :size => "800x600", :format => "png"), :'data-lightbox' => "gallery"%>
+    <%- end %>
      <%= el.render :tresc %>
   </div>
   

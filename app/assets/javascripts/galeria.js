@@ -7,7 +7,6 @@ $(document).ready(function(){
 	}
 	function center(value){	
 	    d=value;
-		//d.css({ position: 'relative'});
 		mv = (d.parent().width()-d.width())/2;
 		mh = (d.parent().height()-d.height())/2;
 		d.css("margin-left", mv)
@@ -23,8 +22,7 @@ $(document).ready(function(){
 		}else{	
 	        $(".galleria").prepend('<div class="stage"><img></div>'); 
 		}
-	    //$(".galleria .stage").prepend('<div class="loader"><img src="/assets/loader.gif"/></div>');
-		
+
 	    $(".galleria .stage img").css({'z-index': 1});
 		$(".galleria a img").each(function(index, value){
 			o = jQuery(value);
@@ -32,8 +30,6 @@ $(document).ready(function(){
 		    o.parent().addClass("inactive");
 			center(o)});
 		
-		//$(".loader").css({width: "100%",height: "100%",'z-index': 2, position: 'absolute', background:'rgba(255,255,255,0.5)'});
-		//center($(".loader"));
 		$(".image").attr("src", $(".galleria a").first().attr("data-pre"));
 		t = $(".galleria a").first();
 		t.removeClass("inactive").addClass("active");
@@ -46,10 +42,8 @@ $(document).ready(function(){
 	       image = new Image();    
 
 		    image.onload = function() {
-		    	//$(".loader").fadeIn(100);
 		        $(".image").fadeOut(200, function() {
 		            $(this).attr("src", newSrc).fadeIn(200);
-		         //   $(".loader").fadeOut(100);
 		        });
 		    }
 		    image.src = newSrc;

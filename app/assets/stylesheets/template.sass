@@ -1,5 +1,5 @@
-@import url('http://fonts.googleapis.com/css?family=Ropa+Sans&subset=latin,latin-ext')
-@import url('http://fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext')
+@import url('http://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext')
+@import url('http://fonts.googleapis.com/css?family=Quattrocento+Sans&subset=latin,latin-ext')
 $cont: #ddd
 html, body
   height: 100% 
@@ -8,19 +8,21 @@ html, body
   padding: 0px
 body
   position: absolute
-  font-family: 'Ropa Sans',Verdana, sans-serif
+  font-family: 'Raleway',Verdana, sans-serif
   line-height: 140%
   font-size: 14px  
   text-align: justify 
+  color: #444
 .door
-  background: url("/assets/door.jpg") no-repeat scroll left 40% transparent
+  background: url("/assets/door.jpg") no-repeat scroll left top, url("/assets/door_fill.jpg") repeat-y
+  background-color: transparent
   width: 30%
   float: right
   box-shadow: -8px 0px 40px black
   right: 0px
   top: 0px
-  padding-bottom: 100%
-  margin-bottom: -100%
+  padding-bottom: 200%
+  margin-bottom: -200%
 
 .container
   background: rgba(255,255,255,0.1)
@@ -45,7 +47,13 @@ body
   background-color: $cont
   margin: 20px 0px -1500px 145px
   .content
-    margin: 10px 20px 
+    margin: 10px 30px
+    text-indent: 20px
+    
+    p
+      border-bottom: 1px solid rgb(187, 187, 187)
+      box-shadow: 0 1px white
+      padding-bottom: 20px
     img 
       float: left
       margin: 5px
@@ -78,7 +86,7 @@ body
     
 .site
   overflow: hidden
-  background-image: url("/assets/wall.jpg")
+  background: url("/assets/wall.jpg") repeat-y
   background-size: cover
   background-position: top left
 
@@ -106,8 +114,11 @@ body
 .nav
   float: left
   width: 140px
-  font-family: 'Dosis',Verdana, sans-serif
+  font-family: 'Quattrocento Sans',Verdana, sans-serif
+  letter-spacing: 2px
+  font-size: 11px
   ul
+  
     list-style: none
     margin: 20px 10px 20px 0px
     padding: 0px
@@ -145,9 +156,9 @@ body
   @for $i from 1 through 5
     li:nth-child(#{$i}) 
       a
-        $bc:  #222 + #1e1e1e * $i
+        $bc:  #222 + #2e2e2e * ($i - 1)
         background-color: $bc
-        color: invert(#222  * $i * $i * $i)
+        color: #fff - (#1e1e1e * ($i - 1)* ($i - 1) *($i - 1) ) 
 
 a
   text-decoration: none

@@ -8,12 +8,12 @@
 </head>
 <body>
 <div id="site" class="site">
-<div class="container">
+<div class="container target">
 	<div class="hang t l"></div>
 	<div class="hang t r"></div>
 	<div class="clear"></div>
 <div class='top'>
- <%=image_tag '/assets/logo.png', class: 'logo'%>
+ <a href="/" alt="home"><%=image_tag '/assets/logo.png', class: 'logo'%></a>
  <%=image_tag '/assets/home.png', class: 'graw'%>
 </div>
 <div class="window">
@@ -27,7 +27,7 @@
 </div>
 <div class='footer'>
   (c) Copyright 2013 GrawerPix Centrum Reklamy.<br />
-  <%=link_to 'www.grawerpix.pl'%> <br />
+  <%=link_to 'www.grawerpix.pl', "http://grawerpix.pl"%> <br />
   Wszelkie prawa zastrzeżone. 
 </div>
 <div class="hang b l"></div>
