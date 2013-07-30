@@ -42,7 +42,7 @@ app_name = "greg-bud.info"
 role :app, app_name
 role :web, app_name
 role :db,  app_name, :primary => true
-
+ssh_options[:port] = 123 
 namespace :deploy do
    task :start do ; end
    task :stop do ; end
