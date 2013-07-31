@@ -1,6 +1,7 @@
 # Necessary to run on Site5
 user = "grawerpix"
 load 'deploy/assets', :on_error => :continue
+require "rvm/capistrano"
 require "bundler/capistrano"
 
 set :use_sudo, false
@@ -15,10 +16,10 @@ set :rvm_gemset_name, 'greg-bud.info'
 #set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
 set :rvm_type, :system
 #set :rvm_path, '/usr/local/rvm'
-require "rvm/capistrano"
+
 set :normalize_asset_timestamps, false #to avoid warnings for asset pipeline
 
-set :bundle_cmd, 'source /home/grawerpix/.bash_profile && bundle'
+#set :bundle_cmd, 'source /home/grawerpix/.bash_profile && bundle'
 
 # Less releases, less space wasted
 set :keep_releases, 2
