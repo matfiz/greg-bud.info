@@ -3,5 +3,4 @@ tmp/*
 .DS_Store
 upload/*
 index/*
-config/database.yml
 uploads/*
