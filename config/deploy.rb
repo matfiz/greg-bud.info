@@ -70,15 +70,10 @@ task :link_shared_directories do
   run("mkdir -p #{shared_dir} && ln -s -f #{shared_dir} #{release_dir}")
   #do logow
   shared_dir = File.join(shared_path, 'log')
-  release_dir = File.join(current_release, 'log')
   run("mkdir -p #{shared_dir}")
   #do cache
   shared_dir = File.join(shared_path, 'tmp','cache')
   release_dir = File.join(current_release, 'tmp','cache')
-  run("mkdir -p #{shared_dir} && ln -s -f #{shared_dir} #{release_dir}")
-  #do cache
-  shared_dir = File.join(shared_path, 'assets')
-  release_dir = File.join(current_release, 'public','assets')
   run("mkdir -p #{shared_dir} && ln -s -f #{shared_dir} #{release_dir}")
   #do pictures
   shared_dir = File.join(shared_path, 'pictures')
