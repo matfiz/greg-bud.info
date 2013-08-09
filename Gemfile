@@ -7,7 +7,7 @@ gem 'thin'
 
 gem 'mysql2'
 
-gem 'grawerpix-alchemy','~>1.4', :git => "https://github.com/MariuszHenn/grawerpix-alchemy.git"
+gem 'grawerpix-alchemy','~>1.5', :git => "https://github.com/MariuszHenn/grawerpix-alchemy.git"
 
 gem "rails-i18n"
 # Gems used only for assets and not required

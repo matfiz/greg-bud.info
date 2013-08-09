@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/MariuszHenn/grawerpix-alchemy.git
-  revision: 72787ca0ee276cfe93c57a9d1f8e052bfa1d7bf9
+  revision: 8ad20c36a83fa386dadec2e959ea1bece7d79474
   specs:
-    grawerpix-alchemy (1.4)
+    grawerpix-alchemy (1.5)
       alchemy_cms (~> 2.6.2.1)
       rails (~> 3.2.13)
       rails-i18n
@@ -214,7 +214,7 @@ DEPENDENCIES
   alchemy_cms (~> 2.6.2.1)
   capistrano
   coffee-rails (~> 3.2.1)
-  grawerpix-alchemy (~> 1.4)!
+  grawerpix-alchemy (~> 1.5)!
   jquery-rails
   lightbox-rails
   mysql2
