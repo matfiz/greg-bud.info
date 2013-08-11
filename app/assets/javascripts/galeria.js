@@ -18,9 +18,9 @@ $(document).ready(function(){
 		
 		if ($(".galleria a").length>4){
 			z = Math.round((Math.floor($(".galleria a").length/2))/4)*4;
-			$(".galleria a:nth-child("+z+")").after('<div class="stage"><img class="image"></div>');
+			$(".galleria a:nth-child("+z+")").after('<div class="stage"><img class="image_cont"></div>');
 		}else{	
-	        $(".galleria").prepend('<div class="stage"><img></div>'); 
+	        $(".galleria").prepend('<div class="stage"><img class="image_cont"></div>'); 
 		}
 
 	    $(".galleria .stage img").css({'z-index': 1});
@@ -30,7 +30,7 @@ $(document).ready(function(){
 		    o.parent().addClass("inactive");
 			center(o)});
 		
-		$(".image").attr("src", $(".galleria a").first().attr("data-pre"));
+		$(".image_cont").attr("src", $(".galleria a").first().attr("data-pre"));
 		t = $(".galleria a").first();
 		t.removeClass("inactive").addClass("active");
 		
@@ -42,7 +42,7 @@ $(document).ready(function(){
 	       image = new Image();    
 
 		    image.onload = function() {
-		        $(".image").fadeOut(200, function() {
+		        $(".image_cont").fadeOut(200, function() {
 		            $(this).attr("src", newSrc).fadeIn(200);
 		        });
 		    }
